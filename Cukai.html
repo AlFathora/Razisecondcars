@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toko Penjualan Modern</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: rgb(57, 91, 57);
+        }
+        /* ===== HEADER TOKO ===== */
+        
+        .header {
+            background: linear-gradient(135deg, #d79987, #b19974);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .header h1 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        
+        .alamat {
+            font-size: 26px;
+        }
+        /* ===== ANIMASI JUAL BELI ===== */
+        
+        .marquee {
+            background: #609234;
+            color: fff;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 12px 0;
+        }
+        
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: jalan 12s linear infinite;
+            font-size: 25px;
+            color: #ffeb1b;
+        }
+        
+        @keyframes jalan {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        /* ===== PRODUK ===== */
+        
+        .container {
+            padding: 30px;
+        }
+        
+        .produk {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 50px;
+        }
+        
+        .card {
+            background: rgb(191, 87, 189);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+        /* DISKON */
+        
+        .diskon {
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            background: sky rgb(110, 110, 152);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .harga-coret {
+            text-decoration: line-through;
+            color: #fa0404;
+            font-size: 25px;
+        }
+        
+        .harga {
+            font-size: 25px;
+            color: #4caf50;
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: rgba(11, 11, 11, 0.533);
+            color: yellow;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+        /* ===== FOOTER ===== */
+        
+        .footer {
+            background: rgb(13, 13, 13);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>JUAL & BELI MOBIL BARU/BEKAS</h1>
+        <h1>TERJANGKAU TERBAIK</h1>
+        <p class="alamat">📍 Jl. Sudirman No.45, Medan</p>
+
+        <marquee direction="left" scrollamount="6">
+            🛒 Selamat datang di toko kami | Wa:0831 5338 1112 | IG:rzialfthra
+        </marquee>
+
+    </div>
+
+    <body>
+
+        <h2>Lokasi Toko Kami</h2>
+
+        <iframe src="https://miro.medium.com/1*8ZhgsyCNQRDaKEB7Rk_Udw.jpeg" 
+        width=" 100% " 
+        height="300 " 
+        style="border: 0;; " 
+        allowfullscreen="30px " 
+        loading="lazy ">
+</iframe>
+
+    </body>
+</body>
+
+<!-- ANIMASI -->
+<div class="marquee ">
+    <span>🔥 JUAL & BELI MURAH • DISKON BESAR • HARGA TERBAIK • BELI SEKARANG 🔥</span>
+</div>
+
+<!-- PRODUK -->
+<div class="container ">
+    <div class="produk ">
+
+        <!-- PRODUK 1 -->
+        <div class="card ">
+            <div class="diskon ">DISKON 7,5%</div>
+            <img src="https://cdn0-production-images-kly.akamaized.net/QmgLVAL14iDE4d_G-oaV737rXyg=/640x640/smart/filters:quality(75):strip_icc()/kly-media-production/medias/4583481/original/057642100_1695277382-Snapinsta.app_379045960_1348307895895614_7462189653825817660_n_1080.jpg">
+            <div class="card-body ">
+                <h3>INOVA 5KD</h3>
+                <p class="harga-coret ">Rp 255.000.000</p>
+                <p class="harga ">Rp 175.000.000</p>
+                <a href="# " class="btn ">Beli</a>
+            </div>
+        </div>
+
+        <!-- PRODUK 2 -->
+        <div class="card ">
+            <div class="diskon ">DISKON 6,5%</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPX9zyl0KL15r8krVV5tf9hJFP6uOOL-1zqw&s">
+            <div class="card-body ">
+                <h3>INOVA REBORN G</h3>
+                <p class="harga-coret ">Rp 250.000.000</p>
+                <p class="harga ">Rp 180.000.000</p>
+                <a href="# " class="btn ">Beli</a>
+            </div>
+        </div>
+
+        <!-- PRODUK 3 -->
+        <div class="card ">
+            <div class="diskon ">DISKON 2,3%</div>
+            <img src="https://rajabalapotomotif.com/wp-content/uploads/2025/01/inbound4387847315019260221.jpg">
+            <div class="card-body ">
+                <h3>INOVA VENTURER</h3>
+                <p class="harga-coret ">Rp 250.000.000</p>
+                <p class="harga ">Rp 215.000.000</p>
+                <a href="# " class="btn ">Beli</a>
+            </div>
+        </div>
+
+        <!-- PRODUK 4 -->
+        <div class="card ">
+            <div class="diskon ">DISKON 3,5%</div>
+            <img src="https://rajabalapotomotif.com/wp-content/uploads/2025/01/inbound4387847315019260221.jpg">
+            <div class="card-body ">
+                <h3>INOVA REBORN V</h3>
+                <p class="harga-coret ">Rp 270.000.000</p>
+                <p class="harga ">Rp 225.000.000</p>
+                <a href="# " class="btn ">Beli</a>
+            </div>
+        </div>
+
+        <!-- PRODUK 5 -->
+        <div class="card ">
+            <div class="diskon ">DISKON 1,5%</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWUV_QMVjm6KSc5gL-8DKVO4BdVxzkaTVvsQ&s">
+            <div class="card-body ">
+                <h3>INOVA REBORN Q</h3>
+                <p class="harga-coret ">Rp 200.000.000</p>
+                <p class="harga ">Rp 185.000.000</p>
+                <a href="# " class="btn ">Beli</a>
+            </div>
+        </div>
+
+        <!-- PRODUK 6 -->
+        <div class="card ">
+            <div class="diskon ">DISKON 1,0%</div>
+            <img src="https://i.pinimg.com/1200x/f7/33/65/f7336562a8210c9379e527e1ddc19fce.jpg">
+            <div class="card-body ">
+                <h3>INOVA VENTURER AT 2.0L</h3>
+                <p class="harga-coret ">Rp 300.000.000</p>
+                <p class="harga ">Rp 290.000.000</p>
+                <a href="# " class="btn ">Beli</a>
+            </div>
+        </div>
+
+        <!-- PRODUK 7 -->
+        <div class="card ">
+            <div class="diskon ">DISKON 1,7%</div>
+            <img src="https://cdn1-production-images-kly.akamaized.net/L--u1wKdOa-ImPq6V5PScSRn15I=/640x640/smart/filters:quality(75):strip_icc()/kly-media-production/medias/4583476/original/002954600_1695277382-Snapinsta.app_377757051_604721994936581_374612189210780854_n_10801.jpg">
+            <div class="card-body ">
+                <h3>INOVA VENTURER AT 2.4</h3>
+                <p class="harga-coret ">Rp 300.000.000</p>
+                <p class="harga ">Rp 275.000.000</p>
+                <a href="# " class="btn ">Beli</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer ">
+    © 2026 Toko Jual & Beli MOBIL BEKAS | Harga Bersahabat
+</div>
+
+</body>
+
+</html>
+<h2>Checkout</h2>
+
+<label>Harga Barang:</label>
+<input type="number " id="harga " value="50000 " readonly><br><br>
+
+<label>Jumlah:</label>
+<input type="number " id="jumlah " value="1 " min="1 "><br><br>
+
+<button onclick="checkout() ">Checkout</button>
+
+<h3>Total Penghasilan:
+    <span id="total ">Rp 0</span>
+</h3>
